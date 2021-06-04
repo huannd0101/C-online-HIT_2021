@@ -1,0 +1,13 @@
+- sử dụng thư viện <stdlib.h>: dùng hàm rand()
+- sử dụng thư viện <time.h>: dùng hàm time()
+
+- random ra một số bất kì
+int a = rand();
+
+- random ra một số trong khoảng [min, max]
+int a = min + rand() % (max - min + 1);
+
+- thay đổi số sau mỗi lần random thì cần thêm 
+	srand(time(NULL)); 
+hoặc
+	srand(time(0));
