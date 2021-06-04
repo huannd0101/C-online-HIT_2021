@@ -1,0 +1,40 @@
+Trần Đăng Khoa: 10đ
+---Chưa format code
+Bài 1: 
+- Chưa có điều kiện khi nhập n
+- Sai biểu thức
+Bài 2:
+- Tính tổng phần tử thực thì em phải khai báo biến thực lưu giá trị
+- Gọi hàm xoa(a, n, i) vì n đã là địa chỉ
+- gọi hàm Xoa_tp(a, &n) ở trong hàm main
+- Những số có phần thập phân >= 0.5 mới xóa chứ kp phần thập phân > 0 thì xóa
+Bài 3:
+- Hàm insert sai
+-> sai
+
+Hằng Mai: 95đ
+Bài 1: 
+- n > 3 em nha
+- em nên tách phần nhập số thực và nguyên thành 2 hàm nha
+- Nhập x != 0 thì mới nhập lại thôi. X có thể âm nữa
+
+Vũ Đình Dương: 55đ
+Bài 1:
+- Đầu bài yêu cầu hàm nên em viết hàm nhé
+- Nhập xuất chưa giới hạn giá trị nhập
+- Sai r
+Bài 2:
+- giới hạn nhập n sai nha
+- Vì là tổng phần tử thực nên em sai ý tính tổng này nha. Phải khai báo biến s kiểu thực 
+- Xóa đúng: 20đ
+Bài 3: 35đ
+
+Đặng Đức Duy: 70đ
+Bài 1:
+- Trong while hàm NhapX() là toán tử so sánh nha -> nếu không sẽ sai cả bài
+- 20đ
+Bài 2: 35đ
+- Em xem lại đk nhập n nha 
+- bài đúng r
+Bài 3: 15đ
+- Chèn k vào trước số hoàn hảo chứ k chèn vào sau nha

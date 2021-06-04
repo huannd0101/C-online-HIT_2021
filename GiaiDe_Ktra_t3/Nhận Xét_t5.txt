@@ -1,0 +1,13 @@
+Vũ Thị Quỳnh: 50đ
+Bài 1:
+- Nên viết riêng 2 hàm nhập số thực và số nguyên ra để còn re-use. Có nhận xét bài các bạn trước
+- t *= 2*i - 1; ---> t = 2*i - 1;
+----sai 0đ
+Bài 2: 3đ
+Bài 3: Chưa gán giá trị mặc định cho s, kq chạy sai
+--> 2đ
+
+Nguyễn Ngọc Đạt: 80đ
+Bài 1: return fabs nha em. abs nó ép sang kiểu số nguyên-0.5đ
+Bài 2: Em nên tham chiếu vào các hàm để nó còn thay đổi số lượng phần tử mảng trong hàm main 
+Bài 3: Chèn sai nha em :v 15đ
