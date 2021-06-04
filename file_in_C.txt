@@ -1,0 +1,56 @@
+1) thư viện cần thiết để làm việc với file
+#include<fstream>
+
+2) ghi dữ liệu vào file file
+	- ghi dữ vào file dùng đối tượng: ofstream
++) khai báo: ofstream f(đường dẫn tới file, cách thức ghi);
++) cách thức ghi: ta có 2 cách thức đó là:
+	1) ghi đè lên dữ liệu cũ(dữ liệu cũ bị xóa đi): ios::out;
+	2) ghi nối tiếp lên dữ liệu cũ(ghi tiếp xuống dưới): ios::app;
++) sau khi ghi file xong ta cần đóng file để đảm bảo dữ liệu k bị mất
+	f.close();
+
+
+VD: Ghi mảng vào file có tên abc.txt .Mỗi lần ghi đều xóa file cũ
+	void ghiFile(char *fileName, int *a, int n){
+		ofstream f(fileName, ios::out);
+		for(int i=0; i<n; i++)
+			f << a[i] << " ";
+		f.close();
+	}
+
+	int main(){
+		int a[] = {1,2,3,4,5,6};
+		int n = 6;
+		ghiFile("abc.txt");
+		return 0;
+	}
+
+VD: ghi 1 số vào file: f << a;
+Lưu ý: dùng toán tử xuất như ở cout để xuất vào file
+
+3) đọc dữ liệu từ file ra:
+- Dùng đối tượng ifstream
+- khi đọc thì ta đọc từng dòng một nên dùng: getline()
+- Khai báo: ifstream f(đường dẫn tới file, cách thức đọc);
++) đường dẫn giống ghi file
++) cách thức đọc chỉ có 1: ios::in
+
+VD: đọc dữ từ file abc.txt
+
+void docFile(char *fileName) {
+	ifstream f(fileName, ios::in);
+	char s[255]; 		//ta sẽ dùng mảng ký tự này để lưu giá trị của 1 dòng trong file
+	while(!eof()) {
+		f.getline(s, 255);
+		cout << s << endl;
+	}
+	f.close();
+}
+
+int main(){
+	docFile("abc.txt");
+}
+
+- Chú ý: eof() là hàm kiểm tra xem file của ta đã đọc hết chưa, hết thì trả về true
+eof : end of file
